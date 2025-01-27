@@ -1,4 +1,4 @@
-# https://www.fesliyanstudios.com/royalty-free-sound-effects-download/alarm-203
+# https://www.fesliyanstudios.com/royalty-free-sound-effects-download/alarm-2031
 from playsound import playsound
 import time
 
@@ -23,4 +23,7 @@ def alarm(seconds):
     playsound("alarm.mp3")
 
 
-alarm(10)
+minutes = int(input("How many minutes to wait: "))
+seconds = int(input("How many seconds to wait: "))
+total_seconds = minutes * 60 + seconds
+alarm(total_seconds)
